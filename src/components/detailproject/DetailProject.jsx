@@ -51,8 +51,8 @@ const DetailProject = (props) => {
             />
             <div id="container-mobile">
                 {currentProject.images.map(
-                    item => 
-                    <div className="border-1 w-12 surface-border border-round m-2 text-center py-5 px-3">
+                    (item, index) => 
+                    <div key={index} className="border-1 w-12 surface-border border-round m-2 text-center py-5 px-3">
                         <div className="mb-3 w-12">
                             {item.image && (
                                 <Image 
