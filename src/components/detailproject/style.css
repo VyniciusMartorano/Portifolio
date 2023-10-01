@@ -89,13 +89,14 @@
      display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     #carousel {
         display: none;
     }
     #container-mobile {
         display: flex;
         flex-direction: column;
+        padding: 0px 20px 0px 20px;
    }
 
 }

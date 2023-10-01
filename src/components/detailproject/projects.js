@@ -5,6 +5,15 @@ import someImgLogin from '../../assets/slider/some/some.jpeg'
 import spotifyImgLogin from '../../assets/slider/spotify/spotifyLogin.jpeg'
 import spotifyImgMain from '../../assets/slider/spotify/spotify.jpeg'
 
+//PIZZARIA
+import pizzeriaImgMain from '../../assets/slider/pizzeria/pizzeria.jpeg'
+
+//ECOMMERCE
+import ecommerceImgMain from '../../assets/slider/ecommerce/main.jpeg'
+
+//WOGUESS
+import woguessImgMain from '../../assets/slider/woguess/main.jpeg'
+
 
 const PROJECTS = {
     some: {
@@ -12,7 +21,7 @@ const PROJECTS = {
         images: [
             {
                 image: someImgLogin,
-                description: 'Tela de login'
+                description: 'Login Page'
             },
         ]
     },
@@ -21,11 +30,38 @@ const PROJECTS = {
         images: [
             {
                 image: spotifyImgLogin,
-                description: 'Tela de login'
+                description: 'Login Page'
             },
             {
                 image: spotifyImgMain,
-                description: 'Tela Principal'
+                description: 'Main Page'
+            },
+        ]
+    },
+    pizzeria: {
+        title: 'Desktop Pizzeria System',
+        images: [
+            {
+                image: pizzeriaImgMain,
+                description: 'Main Page'
+            },
+        ]
+    },
+    ecommerce: {
+        title: 'E-commerce Django',
+        images: [
+            {
+                image: ecommerceImgMain,
+                description: 'Main Page'
+            },
+        ]
+    },
+    woguess: {
+        title: 'Woguess Game',
+        images: [
+            {
+                image: woguessImgMain,
+                description: 'Main Page'
             },
         ]
     },

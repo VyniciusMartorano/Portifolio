@@ -15,6 +15,7 @@ section#about-me {
 .text-about {
     color: black;
     letter-spacing: 1px;
+    text-align: left;
     margin-top: 1rem;
 }
 
