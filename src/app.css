@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(16, 15, 23);
+    padding-bottom: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+:target {
+scroll-margin-top: .8em;
+}
+
+.topic-title {
+    font-size: 2em;
+    color: beige;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: center;
+    user-select: none;
+}
+
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+  }
+  
+  /* Estilizando a área de fundo da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f100; /* Cor de fundo da área de track */
+  }
+  
+  /* Estilizando o polegar da barra de rolagem */
+  ::-webkit-scrollbar-thumb:vertical {
+    border-radius: 8px;
+    background-color: #585656; /* Cor do polegar */
+  }
+  ::-webkit-scrollbar-thumb:horizontal {
+    border-radius: 8px;
+    height: 1px !important;
+    background-color: #585656; /* Cor do polegar */
+  }
+
+  .not-select {
+    user-select: none;
+  }
+  
+  /* Estilizando o botão da barra de rolagem */

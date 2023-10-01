@@ -1,0 +1,14 @@
+#work {
+    background-color:   rgb(248 247 247) !important;
+    margin-top: 9rem;
+    
+}
+
+#work-title {
+    color: black;
+    padding-top: 3rem;
+}
+
+#works-container {
+    display: flex;
+}

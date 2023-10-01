@@ -1,0 +1,25 @@
+#skills {
+    padding-top: 3rem;
+    /* background-color: rgba(255, 255, 255, 0); */
+}
+
+.container-skills-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    /* padding: 2rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.item-skill {
+    display: flex;
+    width: 100px;
+    margin: 1rem 2rem;
+    height: 100px;
+    border-radius: 50%;
+    user-select: none;
+    
+}

@@ -1,0 +1,15 @@
+.subtitles-about {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    color: rgb(36, 36, 36);
+}
+
+.item-education {
+    font-size: 1.1em;
+    color: black;
+    font-weight: 500;
+    text-align: left;
+}
+a {
+    color: rgb(56, 241, 18);
+}
