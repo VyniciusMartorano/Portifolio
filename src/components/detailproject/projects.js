@@ -4,6 +4,7 @@ import someImgLogin from '../../assets/slider/some/some.jpeg'
 //SPOTIFY
 import spotifyImgLogin from '../../assets/slider/spotify/spotifyLogin.jpeg'
 import spotifyImgMain from '../../assets/slider/spotify/spotify.jpeg'
+import spotifyImgMusics from '../../assets/slider/spotify/musics.png'
 
 //PIZZARIA
 import pizzeriaImgMain from '../../assets/slider/pizzeria/pizzeria.jpeg'
@@ -35,6 +36,10 @@ const PROJECTS = {
             {
                 image: spotifyImgMain,
                 description: 'Main Page'
+            },
+            {
+                image: spotifyImgMusics,
+                description: 'Músicas'
             },
         ]
     },

@@ -29,7 +29,7 @@ const Carousel = (props) => {
                 />
                 <Item 
                     title={'Mister Massas'} 
-                    subtitle={'System to Pizzeria Desktop'} 
+                    subtitle={'Desktop System for Pizzeria'} 
                     to={'pizzeria'} 
                     key={3} 
                     img={mistermassas} 
