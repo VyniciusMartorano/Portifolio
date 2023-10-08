@@ -18,7 +18,8 @@ import woguessImgMain from '../../assets/slider/woguess/main.jpeg'
 
 const PROJECTS = {
     some: {
-        title: 'Sistema de administração de miniempresas da Juniors Achieviment',
+        title: 'Junior Achievement Mini-Enterprise Management System.',
+        description: 'System created to update and migrate the routines of Mini Enterprises to software with greater ease of manipulation by employees.',
         images: [
             {
                 image: someImgLogin,
@@ -27,7 +28,8 @@ const PROJECTS = {
         ]
     },
     spotify: {
-        title: 'Clone Full Stack do App Spotify Web',
+        title: 'A Full Stack App of Spotify Web',
+        description: 'The application was built in Python on the backend using Django Rest Framework and React JS on the frontend, using Redux for global state management.',
         images: [
             {
                 image: spotifyImgLogin,
@@ -39,12 +41,13 @@ const PROJECTS = {
             },
             {
                 image: spotifyImgMusics,
-                description: 'Músicas'
+                description: 'Musics'
             },
         ]
     },
     pizzeria: {
         title: 'Desktop Pizzeria System',
+        description: 'System for a local pizzeria built to be used in the service seeking to speed up the order creation process, generating the order and the pdf of the order by printing it in sequence. This system was built entirely with Python using the PyQt5 graphical interface module.',
         images: [
             {
                 image: pizzeriaImgMain,
@@ -54,6 +57,7 @@ const PROJECTS = {
     },
     ecommerce: {
         title: 'E-commerce Django',
+        description: 'Built to test knowledge, it has all the features of a conventional e-commerce, just missing the payment option that would be included if the project were put on the air',
         images: [
             {
                 image: ecommerceImgMain,
@@ -63,6 +67,7 @@ const PROJECTS = {
     },
     woguess: {
         title: 'Woguess Game',
+        description: 'Woguess is a game built from Html, Css and Javascript, made because it aims to get a five-letter word right in six tries.',
         images: [
             {
                 image: woguessImgMain,

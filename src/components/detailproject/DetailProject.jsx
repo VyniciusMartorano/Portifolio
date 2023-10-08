@@ -40,6 +40,7 @@ const DetailProject = (props) => {
             </div>
             <h1 className="title-detail-project not-select">{ params.nameproject }</h1>
             <h2 className="subtitle-detail-project not-select">{ currentProject.title }</h2>
+            <p className="description-project">{currentProject.description}</p>
             <Carousel 
                 value={currentProject.images} 
                 numVisible={1} 
@@ -69,6 +70,7 @@ const DetailProject = (props) => {
                     </div>
                 )}
             </div>
+
 
             {redirect && (<Navigate to={'/'} />)}
         </div>

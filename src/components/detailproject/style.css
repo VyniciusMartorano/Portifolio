@@ -39,6 +39,10 @@
     color: white;
     font-size: 1.4em;
 }
+.description-project {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
     
 #return-router-container:hover  #icon-return {
     color: rgb(160, 159, 159);
