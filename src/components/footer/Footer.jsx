@@ -12,7 +12,7 @@ const Footer = () => {
                 target="_blank"
             >
                 <div className="item-footer" id="instagram-icon">
-                    <i class="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram"></i>
                 </div>
             </a>
             <a 
@@ -21,12 +21,12 @@ const Footer = () => {
                 target="_blank"
             >
                 <div className="item-footer" id="linkedin-icon">
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i className="fa-brands fa-linkedin"></i>
                 </div>
             </a>
             <a className="link-footer" href="https://github.com/VyniciusMartorano" target="_blank">
                 <div className="item-footer" id="github-icon">
-                    <i class="fa-brands fa-github"></i>
+                    <i className="fa-brands fa-github"></i>
                 </div>
             </a>
 
