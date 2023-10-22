@@ -1,7 +1,7 @@
 import React from "react"
 import './style.css'
 
-import Carousel from "./Carousel/Carousel"
+import Carousel from "./carousel/Carousel"
 
 
 const Works = () => {
