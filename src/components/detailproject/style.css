@@ -122,3 +122,7 @@
     height: 150px !important;
    }
 }
+
+a.available-link {
+    text-decoration: none;
+}

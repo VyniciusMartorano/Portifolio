@@ -14,6 +14,7 @@ import ecommerceImgMain from '../../assets/slider/ecommerce/main.jpeg'
 
 //WOGUESS
 import woguessImgMain from '../../assets/slider/woguess/main.jpeg'
+import woguessImgGame from '../../assets/slider/woguess/game.png'
 
 
 const PROJECTS = {
@@ -67,11 +68,16 @@ const PROJECTS = {
     },
     woguess: {
         title: 'Woguess Game',
-        description: 'Woguess is a game built from Html, Css and Javascript, made because it aims to get a five-letter word right in six tries.',
+        description: `Woguess is a game built from Html, Css and Javascript, made because it aims to get a five-letter word right in six tries.`,
+        availableIn: 'https://worddle-br.netlify.app/',
         images: [
             {
                 image: woguessImgMain,
                 description: 'Main Page'
+            },
+            {
+                image: woguessImgGame,
+                description: 'Game In Progress'
             },
         ]
     },

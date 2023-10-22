@@ -41,6 +41,10 @@ const DetailProject = (props) => {
             <h1 className="title-detail-project not-select">{ params.nameproject }</h1>
             <h2 className="subtitle-detail-project not-select">{ currentProject.title }</h2>
             <p className="description-project">{currentProject.description}</p>
+            {currentProject.availableIn && 
+                <p>Available in <a className="available-link" href={currentProject.availableIn}>{currentProject.availableIn}</a></p>
+            }
+            
             <Carousel 
                 value={currentProject.images} 
                 numVisible={1} 

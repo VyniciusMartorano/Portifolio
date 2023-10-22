@@ -14,8 +14,8 @@ const Education = () => {
                 <li className="item-education"><b>UFRN</b> - INFORMATICS FOR INTERNET (TECHNICAL) <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
                 <li className="item-education"><b>UDEMY</b> - Modern Web Course with JavaScript 2022 + Projects <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
                 <li className="item-education"><b>UDEMY</b> - BASIC TO ADVANCED PYTHON 3 COURSE (WITH REAL PROJECTS) <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
-                <li className="item-education"><b>UDEMY</b> - PYTHON 3 - VIDEO COURSE [120H] <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
-                <li className="item-education"><b>UDEMY</b> - HTML5 E CSS3 COURSE: MODULE 1 OF 5 [40 HOURS] <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
+                <li className="item-education"><b>CURSO EM VIDEO</b> - PYTHON 3 [120H] <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
+                <li className="item-education"><b>CURSO EM VIDEO</b> - HTML5 E CSS3 COURSE: MODULE 1 OF 5 [40 HOURS] <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
             </ul>
             
             <h4 style={{marginTop: '30px'}} className="subtitles-about">
