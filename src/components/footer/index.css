@@ -30,9 +30,18 @@ section#footer {
 #instagram-icon {
     border-color: rgb(200, 32, 200);
 }
+#instagram-icon:hover {
+    background-color: rgb(196, 58, 196);
+}
 #linkedin-icon {
     border-color: rgb(35, 77, 203);
 }
+#linkedin-icon:hover {
+    background-color: rgb(31, 100, 199);
+}
 #github-icon {
     border-color: #8d2cc5;
+}
+#github-icon:hover {
+    background-color: #9645c5;
 }
