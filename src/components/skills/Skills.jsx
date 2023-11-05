@@ -19,6 +19,7 @@ import css from './../../assets/svgs/css.svg'
 import delphi from './../../assets/svgs/delphi.svg'
 import git from './../../assets/svgs/git.svg'
 import docker from './../../assets/svgs/docker.svg'
+import angular from './../../assets/svgs/angular.svg'
 
 
 const logos = [
@@ -33,6 +34,7 @@ const logos = [
     { icon: django, label: 'Django' },
     { icon: spring, label: 'Spring' },
     { icon: vue, label: 'Vue.js' },
+    { icon: angular, label: 'Angular' },
     { icon: react, label: 'React' },
     { icon: redux, label: 'Redux' },
     { icon: bootstrap, label: 'Bootstrap' },

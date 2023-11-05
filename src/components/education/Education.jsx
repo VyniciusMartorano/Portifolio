@@ -10,7 +10,7 @@ const Education = () => {
                 1.0 <i className="fas fa-solid fa-book"></i> Education
             </h4>
             <ul style={{marginTop: '1rem'}}>
-                <li className="item-education"><b>IFRN</b> - ANALYSIS AND SYSTEMS DEVELOPMENT (HIGHER) <i style={{color: 'black'}} className="fa-solid fa-spinner" ></i></li>
+                <li className="item-education"><b>IFRN</b> - ANALYSIS AND SYSTEMS DEVELOPMENT (BACHELOR) <i style={{color: 'black'}} className="fa-solid fa-spinner" ></i></li>
                 <li className="item-education"><b>UFRN</b> - INFORMATICS FOR INTERNET (TECHNICAL) <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
                 <li className="item-education"><b>UDEMY</b> - Modern Web Course with JavaScript 2022 + Projects <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
                 <li className="item-education"><b>UDEMY</b> - BASIC TO ADVANCED PYTHON 3 COURSE (WITH REAL PROJECTS) <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
