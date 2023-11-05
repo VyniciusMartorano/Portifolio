@@ -44,9 +44,7 @@ const DetailProject = (props) => {
             {currentProject.availableIn && 
                 <p>Available in <a className="available-link" href={currentProject.availableIn}>{currentProject.availableIn}</a></p>
             }
-            {currentProject.availableIn2 && 
-                <p>Available in <a className="available-link" href={currentProject.availableIn2}>{currentProject.availableIn2}</a></p>
-            }
+       
             
             <Carousel 
                 value={currentProject.images} 

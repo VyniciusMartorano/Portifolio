@@ -33,8 +33,8 @@ const PROJECTS = {
     spotify: {
         title: 'A Full Stack App of Spotify Web',
         description: 'The application was built in Python on the backend using Django Rest Framework and React JS on the frontend, using Redux for global state management.',
-        availableIn: 'https://github.com/VyniciusMartorano/Spotify02-Front',
-        availableIn2: 'https://github.com/VyniciusMartorano/Spotify02-Back',
+        availableIn: 'https://github.com/VyniciusMartorano/Spotify02-Front  https://github.com/VyniciusMartorano/Spotify02-Back',
+        // availableIn2: 'https://github.com/VyniciusMartorano/Spotify02-Back',
         images: [
             {
                 image: spotifyImgLogin,
