@@ -11,6 +11,8 @@ import pizzeriaImgMain from '../../assets/slider/pizzeria/pizzeria.jpeg'
 
 //ECOMMERCE
 import ecommerceImgMain from '../../assets/slider/ecommerce/main.jpeg'
+import ecommerceImgCart from '../../assets/slider/ecommerce/carrinho.png'
+import ecommerceImgProductDetail from '../../assets/slider/ecommerce/product_detail.png'
 
 //WOGUESS
 import woguessImgMain from '../../assets/slider/woguess/main.jpeg'
@@ -63,6 +65,14 @@ const PROJECTS = {
             {
                 image: ecommerceImgMain,
                 description: 'Main Page'
+            },
+            {
+                image: ecommerceImgProductDetail,
+                description: 'Product Detail'
+            },
+            {
+                image: ecommerceImgCart,
+                description: 'Cart'
             },
         ]
     },
