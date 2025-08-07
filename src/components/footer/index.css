@@ -1,47 +1,194 @@
-
+/* Footer - Design Moderno */
 
 section#footer {
     display: flex;
     width: 100%;
-    height: 100px;
-    padding: 7px;
+    min-height: 120px;
+    padding: 2rem;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(135deg, #0D1821 0%, #344966 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+section#footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(240,244,239,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-text {
+    color: rgba(240, 244, 239, 0.8);
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 .item-footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    border: 1px solid white;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    margin-right: 10px;
+    background: rgba(240, 244, 239, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(240, 244, 239, 0.2);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.item-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(240, 244, 239, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.item-footer:hover::before {
+    left: 100%;
+}
+
+.item-footer i {
+    font-size: 1.5rem;
+    color: #F0F4EF;
+    transition: all 0.3s ease;
+    z-index: 1;
+    position: relative;
 }
 
 .link-footer {
-    color: white;
+    color: #F0F4EF;
     text-decoration: none;
     border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
+/* Estilos específicos para cada rede social */
 #instagram-icon {
-    border-color: rgb(200, 32, 200);
+    border-color: #E4405F;
 }
+
 #instagram-icon:hover {
-    background-color: rgb(196, 58, 196);
+    background: linear-gradient(135deg, #E4405F 0%, #C13584 100%);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(228, 64, 95, 0.4);
 }
+
 #linkedin-icon {
-    border-color: rgb(35, 77, 203);
+    border-color: #0077B5;
 }
+
 #linkedin-icon:hover {
-    background-color: rgb(31, 100, 199);
+    background: linear-gradient(135deg, #0077B5 0%, #005885 100%);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 119, 181, 0.4);
 }
+
 #github-icon {
-    border-color: #8d2cc5;
+    border-color: #333;
 }
+
 #github-icon:hover {
-    background-color: #9645c5;
+    background: linear-gradient(135deg, #333 0%, #000 100%);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 10px 25px rgba(51, 51, 51, 0.4);
+}
+
+.item-footer:hover i {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px rgba(240, 244, 239, 0.5));
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-content {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section#footer {
+        min-height: 100px;
+        padding: 1.5rem;
+    }
+
+    .footer-social {
+        gap: 1rem;
+    }
+
+    .item-footer {
+        width: 50px;
+        height: 50px;
+    }
+
+    .item-footer i {
+        font-size: 1.3rem;
+    }
+
+    .footer-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section#footer {
+        padding: 1rem;
+    }
+
+    .footer-social {
+        gap: 0.8rem;
+    }
+
+    .item-footer {
+        width: 45px;
+        height: 45px;
+    }
+
+    .item-footer i {
+        font-size: 1.2rem;
+    }
+
+    .footer-text {
+        font-size: 0.8rem;
+    }
 }

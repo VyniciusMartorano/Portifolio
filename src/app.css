@@ -1,55 +1,225 @@
-*{
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-color: rgb(16, 15, 23);
+  background: linear-gradient(135deg, #0D1821 0%, #344966 100%);
+  color: #F0F4EF;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
 :target {
-scroll-margin-top: .8em;
+  scroll-margin-top: 2rem;
 }
 
+/* Tipografia melhorada */
 .topic-title {
-    font-size: 2em;
-    color: beige;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    text-align: center;
-    user-select: none;
+  font-size: 2.2rem;
+  color: #F0F4EF;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  user-select: none;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  text-shadow: 0 4px 8px rgba(13, 24, 33, 0.3);
 }
 
+/* Seções gerais */
+section {
+  padding: 4rem 0;
+  position: relative;
+}
+
+/* Container responsivo */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Botões modernos */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #F0F4EF 0%, #344966 100%);
+  color: #0D1821;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(240, 244, 239, 0.4);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(240, 244, 239, 0.6);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Cards modernos */
+.card {
+  background: rgba(240, 244, 239, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(240, 244, 239, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(13, 24, 33, 0.2);
+}
 
 /* Estilizando a barra de rolagem */
 ::-webkit-scrollbar {
-    width: 10px; /* Largura da barra de rolagem */
-  }
-  
-  /* Estilizando a área de fundo da barra de rolagem */
-  ::-webkit-scrollbar-track {
-    background-color: #f1f1f100; /* Cor de fundo da área de track */
-  }
-  
-  /* Estilizando o polegar da barra de rolagem */
-  ::-webkit-scrollbar-thumb:vertical {
-    border-radius: 8px;
-    background-color: #585656; /* Cor do polegar */
-  }
-  ::-webkit-scrollbar-thumb:horizontal {
-    border-radius: 8px;
-    height: 1px !important;
-    background-color: #585656; /* Cor do polegar */
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(240, 244, 239, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #F0F4EF 0%, #344966 100%);
+  border-radius: 10px;
+  border: 2px solid rgba(240, 244, 239, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #E0E8E0 0%, #2A3A52 100%);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  height: 12px;
+}
+
+/* Utilitários */
+.not-select {
+  user-select: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #F0F4EF 0%, #344966 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animações globais */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
 
-  .not-select {
-    user-select: none;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Estilizando o botão da barra de rolagem */
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Classes de animação */
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.6s ease forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.6s ease forwards;
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .topic-title {
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .topic-title {
+    font-size: 1.7rem;
+  }
+
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+}

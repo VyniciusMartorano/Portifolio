@@ -1,15 +1,262 @@
-.subtitles-about {
-    font-size: 1.3em;
-    letter-spacing: 1px;
-    color: rgb(36, 36, 36);
+/* Seção Educação - Design Moderno */
+
+#education {
+    margin-bottom: 3rem;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
 }
 
-.item-education {
-    font-size: 1.1em;
-    color: black;
-    font-weight: 500;
-    text-align: left;
+.subtitles-about {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #F0F4EF;
+    margin: 2rem 0 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    position: relative;
+    padding-left: 1rem;
+    text-transform: uppercase;
 }
-a {
-    color: rgb(56, 241, 18);
+
+.subtitles-about::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 30px;
+    background: linear-gradient(135deg, #F0F4EF 0%, #344966 100%);
+    border-radius: 2px;
+}
+
+.subtitles-about i {
+    color: #F0F4EF;
+    font-size: 1.2rem;
+}
+
+/* Grid de Educação */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Cards de Educação */
+.education-card {
+    background: rgba(240, 244, 239, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(240, 244, 239, 0.2);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.education-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(240, 244, 239, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.education-card:hover::before {
+    left: 100%;
+}
+
+.education-card:hover {
+    background: rgba(240, 244, 239, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(13, 24, 33, 0.3);
+    border-color: rgba(240, 244, 239, 0.3);
+}
+
+/* Header do Card */
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(240, 244, 239, 0.2);
+}
+
+.institution-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #F0F4EF;
+    background: linear-gradient(135deg, #F0F4EF 0%, #344966 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.status-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(240, 244, 239, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.status-icon i {
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.status-icon i.fa-check {
+    animation: pulse 2s infinite;
+}
+
+.status-icon i.fa-spinner {
+    animation: spin 2s linear infinite;
+}
+
+/* Conteúdo do Card */
+.education-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.course-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(240, 244, 239, 0.95);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.course-type {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgba(240, 244, 239, 0.7);
+    background: rgba(240, 244, 239, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    width: fit-content;
+    border: 1px solid rgba(240, 244, 239, 0.2);
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .subtitles-about {
+        font-size: 1.2rem;
+        margin: 1.5rem 0 1rem;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .education-card {
+        padding: 1.2rem;
+    }
+
+    .institution-name {
+        font-size: 1rem;
+    }
+
+    .course-name {
+        font-size: 0.95rem;
+    }
+
+    .course-type {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .subtitles-about {
+        font-size: 1.1rem;
+        padding-left: 0.8rem;
+    }
+
+    .subtitles-about::before {
+        width: 3px;
+        height: 25px;
+    }
+
+    .education-grid {
+        gap: 0.8rem;
+        padding: 0 1.5rem;
+    }
+
+    .education-card {
+        padding: 1rem;
+    }
+
+    .education-header {
+        margin-bottom: 0.8rem;
+        padding-bottom: 0.6rem;
+    }
+
+    .institution-name {
+        font-size: 0.95rem;
+    }
+
+    .course-name {
+        font-size: 0.9rem;
+    }
+
+    .course-type {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .status-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .status-icon i {
+        font-size: 0.8rem;
+    }
 }

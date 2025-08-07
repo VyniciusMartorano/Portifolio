@@ -2,27 +2,91 @@ import React from "react"
 import './style.css'
 
 const Education = () => {
+    const educationData = [
+        {
+            institution: "IFRN",
+            course: "ANALYSIS AND SYSTEMS DEVELOPMENT",
+            type: "BACHELOR",
+            status: "in-progress",
+            icon: "fa-spinner"
+        },
+        {
+            institution: "UFRN",
+            course: "INFORMATICS FOR INTERNET",
+            type: "TECHNICAL",
+            status: "completed",
+            icon: "fa-check"
+        },
+        {
+            institution: "UDEMY",
+            course: "Modern Web Course with JavaScript 2022 + Projects",
+            type: "CERTIFICATION",
+            status: "completed",
+            icon: "fa-check"
+        },
+        {
+            institution: "UDEMY",
+            course: "BASIC TO ADVANCED PYTHON 3 COURSE (WITH REAL PROJECTS)",
+            type: "CERTIFICATION",
+            status: "completed",
+            icon: "fa-check"
+        },
+        {
+            institution: "CURSO EM VIDEO",
+            course: "PYTHON 3",
+            type: "CERTIFICATION",
+            status: "completed",
+            icon: "fa-check"
+        },
+        {
+            institution: "CURSO EM VIDEO",
+            course: "HTML5 E CSS3 COURSE: MODULE 1 OF 5",
+            type: "CERTIFICATION",
+            status: "completed",
+            icon: "fa-check"
+        }
+    ];
 
+    const getStatusIcon = (status, icon) => {
+        const iconClass = `fa-solid ${icon}`;
+        const iconStyle = status === 'completed'
+            ? { color: '#4CAF50' }
+            : { color: '#FF9800' };
+
+        return <i className={iconClass} style={iconStyle}></i>;
+    };
 
     return (
         <div id="education">
             <h4 className="subtitles-about">
                 1.0 <i className="fas fa-solid fa-book"></i> Education
             </h4>
-            <ul style={{marginTop: '1rem'}}>
-                <li className="item-education"><b>IFRN</b> - ANALYSIS AND SYSTEMS DEVELOPMENT (BACHELOR) <i style={{color: 'black'}} className="fa-solid fa-spinner" ></i></li>
-                <li className="item-education"><b>UFRN</b> - INFORMATICS FOR INTERNET (TECHNICAL) <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
-                <li className="item-education"><b>UDEMY</b> - Modern Web Course with JavaScript 2022 + Projects <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
-                <li className="item-education"><b>UDEMY</b> - BASIC TO ADVANCED PYTHON 3 COURSE (WITH REAL PROJECTS) <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
-                <li className="item-education"><b>CURSO EM VIDEO</b> - PYTHON 3 [120H] <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
-                <li className="item-education"><b>CURSO EM VIDEO</b> - HTML5 E CSS3 COURSE: MODULE 1 OF 5 [40 HOURS] <i className="fa-solid fa-check" style={{color: 'green'}} ></i></li>
-            </ul>
-            
-            <h4 style={{marginTop: '30px'}} className="subtitles-about">
+
+            <div className="education-grid">
+                {educationData.map((item, index) => (
+                    <div key={index} className="education-card">
+                        <div className="education-header">
+                            <div className="institution">
+                                <span className="institution-name">{item.institution}</span>
+                            </div>
+                            <div className="status-icon">
+                                {getStatusIcon(item.status, item.icon)}
+                            </div>
+                        </div>
+
+                        <div className="education-content">
+                            <h5 className="course-name">{item.course}</h5>
+                            <span className="course-type">{item.type}</span>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            <h4 style={{ marginTop: '30px' }} className="subtitles-about">
                 1.1 <i className="fas fa-solid fa-user"></i> Resume
             </h4>
-
         </div>
     )
 }
+
 export default Education

@@ -13,9 +13,9 @@ const Home = () => {
           <h2>Software Developer</h2>
         </div>
         <div id="infos">
-          <p id="github">
+          <div id="github">
             <div className="centralizar">
-              <i className="fa-brands   fa-github not-select mr-2"></i>
+              <i className="fa-brands   fa-github not-select "></i>
             </div>
             <a
               href="https://github.com/VyniciusMartorano"
@@ -25,22 +25,22 @@ const Home = () => {
             >
               <span>Vynicius Martorano</span>
             </a>
-          </p>
-          <p id="email">
+          </div>
+          <div id="email">
             <div className="centralizar">
-              <i className="fa-solid fa-envelope not-select mr-2"></i>
+              <i className="fa-solid fa-envelope not-select "></i>
             </div>
             <span>vyniciussalusto@gmail.com</span>
-          </p>
-          <p id="fone">
+          </div>
+          <div id="fone">
             <div className="centralizar">
-              <i className="fa-solid fa-phone not-select mr-2"></i>
+              <i className="fa-solid fa-phone not-select "></i>
             </div>
             <span>+ 55 084 99404 1304</span>
-          </p>
-          <p id="linkedin">
+          </div>
+          <div id="linkedin">
             <div className="centralizar">
-              <i className="fa-brands fa-linkedin-in not-select mr-2"></i>
+              <i className="fa-brands fa-linkedin-in not-select"></i>
             </div>
             <a
               className="link-home"
@@ -50,13 +50,8 @@ const Home = () => {
             >
               <span>Vynicius Martorano</span>
             </a>
-          </p>
-          <p id="local">
-            <div className="centralizar">
-              <i className="fa-solid not-select fa-location-dot mr-2"></i>
-            </div>
-            <span>Natal, Rio Grande Do Norte, Brazil</span>
-          </p>
+          </div>
+
         </div>
       </div>
       <div id="content-right">

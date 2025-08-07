@@ -1,187 +1,310 @@
+/* Seção Home - Design Moderno */
 
-
-div#content-left {
-    width: 50%;
-    color: beige;
-}
-
-div.content {
+.content {
     display: flex;
-    flex-direction: row;
-    padding-left: 100px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0 2rem;
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
-
-p#text {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 1.3em;
-    user-select: none;
-    font-weight: 530;
+#content-left {
+    width: 50%;
+    color: #F0F4EF;
+    z-index: 2;
 }
 
-div#hello-text {
-    background-color: rgb(14, 169, 147);
-    width: 130px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 30px;
+#content-right {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+/* Texto de saudação */
+#hello-text {
+    background: linear-gradient(135deg, #F0F4EF 0%, #344966 100%);
+    width: fit-content;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
     text-align: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 25px rgba(240, 244, 239, 0.3);
+    animation: fadeInLeft 0.8s ease forwards;
 }
 
-div#content-right {
+#text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0D1821;
+    margin: 0;
+    user-select: none;
+}
+
+/* Introdução */
+#introduction-div-text {
+    margin: 2rem 0;
+    animation: fadeInLeft 0.8s ease forwards 0.2s;
+    opacity: 0;
+}
+
+#introduction-div-text>h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #F0F4EF 0%, #344966 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 4px 8px rgba(13, 24, 33, 0.3);
+}
+
+#introduction-div-text>h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: rgba(240, 244, 239, 0.9);
+    margin: 0;
+}
+
+/* Informações de contato */
+#infos {
+    margin-top: 3rem;
+    animation: fadeInLeft 0.8s ease forwards 0.4s;
+    opacity: 0;
+}
+
+#infos div {
     display: flex;
-    width: 50%;
-    justify-content: center;
     align-items: center;
+    margin: 0.8rem 0;
+    padding: 0rem 0.8rem;
+    background: rgba(240, 244, 239, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(240, 244, 239, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    gap: 0.5rem;
 }
 
-img.imagem {
-    border-radius: 50%;
-    border: 10px solid rgb(10, 9, 15, 0.9);
-    outline:  10px solid rgba(11, 11, 11, 0.615);
-    user-select: none;
-    transition: 0.4s;
-}
-img.imagem:hover {
-    outline:  0px;
-    box-shadow: 0px 0px 4.5px rgba(255, 255, 255, 0.952);
-}
-
-.content-image {
-    width: 200px;
-    display: flex;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
-}
-
-div#introduction-div-text {
-    margin-top: 1.5rem;
-    user-select: none;
-}
-
-div#introduction-div-text > h1 {
-    font-size: 3em;
-    user-select: none;
-    line-height: 1.2;
-}
-
-div#introduction-div-text > h2 {
-    display: flex;
-    width: max-content;
-    font-size: 1.7em;
-    margin-left: 1px;
-    font-weight: 550;
-}
-
-
-div#infos {
-    margin-top: 4rem;
-}
-
-i.mr-2 {
-    margin-right: 2rem;
-}
-
-p#email {
-    display: flex;
-    width: max-content;
-    font-weight: 400;
-    margin-top: 0.9rem;
-}
-
-p#fone {
-    display: flex;
-    width: max-content;
-    margin-top: 0.9rem;
-    font-weight: 400;
-}
-
-p#local {
-    display: flex;
-    width: max-content;
-    margin-top: 0.9rem;
-    font-weight: 400;
-}
-p#linkedin {
-    display: flex;
-    width: max-content;
-    margin-top: 0.9rem;
-    font-weight: 400;
-}
-p#instagram {
-    display: flex;
-    width: max-content;
-    margin-top: 0.9rem;
-    font-weight: 400;
-}
-
-p#github {
-    display: flex;
-    width: max-content;
-    font-weight: 400;
+#infos div:hover {
+    background: rgba(240, 244, 239, 0.15);
+    transform: translateX(10px);
+    box-shadow: 0 8px 25px rgba(13, 24, 33, 0.2);
 }
 
 .centralizar {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(135deg, #F0F4EF 0%, #344966 100%);
+    border-radius: 50%;
+    margin-right: 0.8rem;
+    box-shadow: 0 4px 15px rgba(240, 244, 239, 0.3);
+}
+
+.centralizar i {
+    color: #F0F4EF;
+    font-size: 1rem;
 }
 
 .link-home {
     text-decoration: none;
-    cursor: pointer;
-    color: white;
+    color: #F0F4EF;
+    transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 .link-home:hover {
-    color: rgb(171, 169, 169);
+    color: #F0F4EF;
+    text-shadow: 0 0 10px rgba(240, 244, 239, 0.5);
 }
 
-
-
-.text-footer {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 0.8em;
-    font-weight: 400;
-    padding-right: 0.6rem;
-    padding-top: 2px;
+/* Imagem de perfil */
+.content-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInRight 0.8s ease forwards 0.6s;
+    opacity: 0;
 }
 
+.imagem {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid rgba(240, 244, 239, 0.2);
+    box-shadow: 0 20px 40px rgba(13, 24, 33, 0.3);
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 2;
+}
 
+.imagem:hover {
+    transform: scale(1.05);
+    border-color: #F0F4EF;
+    box-shadow: 0 30px 60px rgba(240, 244, 239, 0.4);
+}
 
+.content-image::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: linear-gradient(135deg, #F0F4EF 0%, #344966 100%);
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.3;
+}
 
-@media screen and (max-width: 830px) {
+/* Animações */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
     .content {
-        flex-direction: column-reverse !important;
-        padding-bottom: 100px;
-        padding-left: 0px !important;
+        flex-direction: column-reverse;
+        padding: 2rem 1rem;
+        text-align: center;
+        min-height: auto;
+        padding-top: 120px;
     }
 
     #content-right {
-         width: 100% !important;
-         margin-bottom: 2rem;
+        width: 100%;
+        margin-bottom: 3rem;
+
+        height: 100%;
+        padding-top: 30px;
     }
 
     #content-left {
-         width: 100% !important;
-         padding: 0px 0px 0px 50px !important;
+        width: 100%;
+        padding: 0;
     }
 
-    .imagem {
-        width: 180px;
-        height: 180px;
-    }  
+    #hello-text {
+        margin: 0 auto;
+    }
+
+    .content-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    #introduction-div-text>h1 {
+        font-size: 2.8rem;
+    }
+
+    #introduction-div-text>h2 {
+        font-size: 1.5rem;
+    }
+
+    #infos div {
+        /* justify-content: center; */
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0.6rem 0;
+        padding: 0.5rem 0.7rem;
+    }
+
+    .centralizar {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        margin-right: 0.7rem;
+    }
+
+    .centralizar i {
+        color: #F0F4EF;
+        font-size: 0.9rem;
+    }
 }
 
-@media screen and (max-width: 400px) {
-    div#introduction-div-text > h1 {
-        font-size: 2.5em;
+@media screen and (max-width: 480px) {
+    .content {
+        padding: 1rem 1.5rem;
+        padding-top: 100px;
     }
-    div#introduction-div-text > h2 {
-        font-size: 1.5em;
+
+    #hello-text {
+        margin: 0 auto;
+        width: fit-content;
     }
-    
+
+    .content-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    #introduction-div-text>h1 {
+        font-size: 2.2rem;
+    }
+
+    #introduction-div-text>h2 {
+        font-size: 1.3rem;
+    }
+
+    #infos div {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.9rem;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+
+    .centralizar {
+        width: 30px;
+        height: 30px;
+        margin-right: 0.6rem;
+        flex-shrink: 0;
+    }
+
+    .centralizar i {
+        color: #F0F4EF;
+        font-size: 0.85rem;
+    }
+
+    .centralizar i.fa-brands,
+    .centralizar i.fa-solid {
+        color: #F0F4EF;
+        font-size: 0.85rem;
+    }
 }

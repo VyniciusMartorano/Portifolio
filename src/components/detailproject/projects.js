@@ -1,13 +1,16 @@
-//SOME
-import mundodalua from "../../assets/slider/mundodalua/mundodalua.png";
-import cadastroproduto from "../../assets/slider/mundodalua/cadastro-produto.png";
-import consultaprodutos from "../../assets/slider/mundodalua/consulta-produto.png";
-import extratodeestoque from "../../assets/slider/mundodalua/extrato-de-estoque.png";
+//LIVE BIKE
+import livebike from "../../assets/projects/livebike/IMG_3776.jpg";
+import livebike2 from "../../assets/projects/livebike/IMG_3777.jpg";
+import livebike3 from "../../assets/projects/livebike/IMG_3778.jpg";
+import livebike4 from "../../assets/projects/livebike/IMG_3779.jpg";
+import livebike5 from "../../assets/projects/livebike/IMG_3780.jpg";
+import livebike6 from "../../assets/projects/livebike/IMG_3781.jpg";
 
 //SPOTIFY
 import spotifyImgLogin from "../../assets/slider/spotify/spotifyLogin.jpeg";
 import spotifyImgMain from "../../assets/slider/spotify/spotify.jpeg";
 import spotifyImgMusics from "../../assets/slider/spotify/musics.png";
+import spotifyVideo from "../../assets/projects/spotify/video_funcionamento_spotify.mp4";
 
 //PIZZARIA
 import pizzeriaImgMain from "../../assets/slider/pizzeria/pizzeria.jpeg";
@@ -22,27 +25,43 @@ import woguessImgMain from "../../assets/slider/woguess/main.jpeg";
 import woguessImgGame from "../../assets/slider/woguess/game.png";
 
 const PROJECTS = {
-  title: "Mundo da Lua",
-  mundodalua: {
-    description: `Sistema de Controle de Estoque
-        Este sistema foi desenvolvido para atender às necessidades de um cliente que busca um controle de estoque completo para o seu negócio.
-        `,
+  livebike: {
+    title: "Live Bike - Freelance",
+    description: `Sistema web para gestão de bicicletas desenvolvido como projeto freelance.
+    
+O sistema foi construído utilizando Django Rest Framework no backend e React.js no frontend, com banco de dados PostgreSQL.
+
+Funcionalidades implementadas:
+• Gestão de clientes
+• Controle de contratos de aluguel
+• Cadastro de bicicletas
+• Controle de manutenção
+• Geração de relatórios
+• Painel administrativo completo`,
     images: [
       {
-        image: mundodalua,
-        description: "Login Page",
+        image: livebike,
+        description: "Dashboard Principal",
       },
       {
-        image: consultaprodutos,
-        description: "Listagem de produtos",
+        image: livebike2,
+        description: "Gestão de Clientes",
       },
       {
-        image: cadastroproduto,
-        description: "Cadastro de produtos",
+        image: livebike3,
+        description: "Controle de Contratos",
       },
       {
-        image: extratodeestoque,
-        description: "Extrato de estoque",
+        image: livebike4,
+        description: "Cadastro de Bicicletas",
+      },
+      {
+        image: livebike5,
+        description: "Controle de Manutenção",
+      },
+      {
+        image: livebike6,
+        description: "Relatórios",
       },
     ],
   },
@@ -51,8 +70,7 @@ const PROJECTS = {
     description:
       "The application was built in Python on the backend using Django Rest Framework and React JS on the frontend, using Redux for global state management.",
     availableIn:
-      "https://github.com/VyniciusMartorano/Spotify02-Front  https://github.com/VyniciusMartorano/Spotify02-Back",
-    // availableIn2: 'https://github.com/VyniciusMartorano/Spotify02-Back',
+      "https://github.com/VyniciusMartorano/Spotify02-Front https://github.com/VyniciusMartorano/Spotify02-Back",
     images: [
       {
         image: spotifyImgLogin,
@@ -65,6 +83,10 @@ const PROJECTS = {
       {
         image: spotifyImgMusics,
         description: "Musics",
+      },
+      {
+        video: spotifyVideo,
+        description: "Video de Funcionamento",
       },
     ],
   },

@@ -21,7 +21,6 @@ import git from './../../assets/svgs/git.svg'
 import docker from './../../assets/svgs/docker.svg'
 import angular from './../../assets/svgs/angular.svg'
 
-
 const logos = [
     { icon: python, label: 'Python' },
     { icon: node, label: 'Node.js' },
@@ -45,21 +44,21 @@ const logos = [
     { icon: docker, label: 'Docker' },
 ]
 
-
-const Skills = () =>  {
-
-
+const Skills = () => {
     return (
         <section id="skills">
-            <h3  className="topic-title">Skills</h3>
-
+            <h3 className="topic-title">Skills</h3>
             <div className="container-skills-group">
-              {logos.map(
-                (logo) => 
-                    <div key={logo.label} className="item-skill">
-                        <img src={logo.icon} alt={logo.label} title={logo.label} />
+                {logos.map((logo) => (
+                    <div
+                        key={logo.label}
+                        className="item-skill"
+                        data-label={logo.label}
+                        title={logo.label}
+                    >
+                        <img src={logo.icon} alt={logo.label} />
                     </div>
-                )}
+                ))}
             </div>
         </section>
     )
