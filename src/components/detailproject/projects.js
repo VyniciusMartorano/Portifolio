@@ -27,41 +27,42 @@ import woguessImgGame from "../../assets/slider/woguess/game.png";
 const PROJECTS = {
   livebike: {
     title: "Live Bike - Freelance",
-    description: `Sistema web para gestão de bicicletas desenvolvido como projeto freelance.
+    description: `Web system for bicycle management developed as a freelance project.
     
-O sistema foi construído utilizando Django Rest Framework no backend e React.js no frontend, com banco de dados PostgreSQL.
+The system was built using Django Rest Framework on the backend and React.js on the frontend, with PostgreSQL database.
 
-Funcionalidades implementadas:
-• Gestão de clientes
-• Controle de contratos de aluguel
-• Cadastro de bicicletas
-• Controle de manutenção
-• Geração de relatórios
-• Painel administrativo completo`,
+Implemented features:
+• Customer management
+• Rental contract control
+• Bicycle registration
+• Maintenance control
+• Report generation
+• Complete administrative panel
+Available in: https://livebike.com.br/`,
     images: [
       {
         image: livebike,
-        description: "Dashboard Principal",
+        description: "Login Page - User authentication interface with modern design",
       },
       {
         image: livebike2,
-        description: "Gestão de Clientes",
+        description: "Sign Up Page - New user registration form with validation",
       },
       {
         image: livebike3,
-        description: "Controle de Contratos",
-      },
-      {
-        image: livebike4,
-        description: "Cadastro de Bicicletas",
+        description: "Rent Page - Bicycle rental interface with availability check",
       },
       {
         image: livebike5,
-        description: "Controle de Manutenção",
+        description: "Search Rent - Advanced search and filter functionality for rentals",
+      },
+      {
+        image: livebike4,
+        description: "Edit Rent - Rental contract modification and management interface",
       },
       {
         image: livebike6,
-        description: "Relatórios",
+        description: "Payments - Payment processing and transaction management system",
       },
     ],
   },
@@ -74,19 +75,19 @@ Funcionalidades implementadas:
     images: [
       {
         image: spotifyImgLogin,
-        description: "Login Page",
+        description: "Login Page - User authentication with Spotify OAuth integration",
       },
       {
         image: spotifyImgMain,
-        description: "Main Page",
+        description: "Main Page - Music player interface with playlist management",
       },
       {
         image: spotifyImgMusics,
-        description: "Musics",
+        description: "Musics - Song library with search and playback controls",
       },
       {
         video: spotifyVideo,
-        description: "Video de Funcionamento",
+        description: "Using App - Live demonstration of the application functionality",
       },
     ],
   },
@@ -97,7 +98,7 @@ Funcionalidades implementadas:
     images: [
       {
         image: pizzeriaImgMain,
-        description: "Main Page",
+        description: "Main Page - Order management interface with menu and pricing",
       },
     ],
   },
@@ -108,15 +109,15 @@ Funcionalidades implementadas:
     images: [
       {
         image: ecommerceImgMain,
-        description: "Main Page",
+        description: "Main Page - Product catalog with categories and search functionality",
       },
       {
         image: ecommerceImgProductDetail,
-        description: "Product Detail",
+        description: "Product Detail - Individual product view with specifications and images",
       },
       {
         image: ecommerceImgCart,
-        description: "Cart",
+        description: "Cart - Shopping cart with quantity management and checkout process",
       },
     ],
   },
@@ -127,11 +128,11 @@ Funcionalidades implementadas:
     images: [
       {
         image: woguessImgMain,
-        description: "Main Page",
+        description: "Main Page - Game introduction and start interface",
       },
       {
         image: woguessImgGame,
-        description: "Game In Progress",
+        description: "Game In Progress - Active gameplay with word guessing mechanics",
       },
     ],
   },

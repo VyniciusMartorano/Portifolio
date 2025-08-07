@@ -87,7 +87,107 @@ section#about-me::before {
     }
 }
 
-/* Responsividade */
+/* Experience Section */
+.experience-section {
+    margin-bottom: 3rem;
+}
+
+/* Resume Section */
+.resume-section {
+    margin-bottom: 3rem;
+}
+
+.section-subtitle {
+    color: #F0F4EF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(13, 24, 33, 0.3);
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-item {
+    background: linear-gradient(135deg, rgba(13, 24, 33, 0.8) 0%, rgba(52, 73, 102, 0.8) 100%);
+    border: 1px solid rgba(240, 244, 239, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(13, 24, 33, 0.2);
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(13, 24, 33, 0.3);
+    border-color: rgba(240, 244, 239, 0.2);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.company-name {
+    color: #F0F4EF;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(13, 24, 33, 0.3);
+}
+
+.experience-period {
+    color: rgba(240, 244, 239, 0.8);
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: rgba(13, 24, 33, 0.6);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    border: 1px solid rgba(240, 244, 239, 0.2);
+}
+
+.position-title {
+    color: rgba(240, 244, 239, 0.9);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 0 1rem 0;
+    font-style: italic;
+}
+
+.experience-description {
+    color: rgba(240, 244, 239, 0.8);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0 0 1rem 0;
+    text-align: justify;
+}
+
+.experience-technologies {
+    color: rgba(240, 244, 239, 0.9);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    background: rgba(13, 24, 33, 0.4);
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid rgba(240, 244, 239, 0.1);
+}
+
+.experience-technologies strong {
+    color: #F0F4EF;
+    font-weight: 600;
+}
+
+/* Responsive Design for Experience */
 @media (max-width: 768px) {
     section#about-me {
         padding: 3rem 0;
@@ -102,6 +202,57 @@ section#about-me::before {
         font-size: 1rem;
         padding: 1.2rem;
         margin: 1.5rem 0;
+    }
+
+    .experience-section {
+        margin-bottom: 2rem;
+    }
+
+    .resume-section {
+        margin-bottom: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .experience-list {
+        gap: 1.5rem;
+    }
+
+    .experience-item {
+        padding: 1.2rem;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .company-name {
+        font-size: 1.1rem;
+    }
+
+    .experience-period {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .position-title {
+        font-size: 0.95rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .experience-description {
+        font-size: 0.85rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .experience-technologies {
+        font-size: 0.8rem;
+        padding: 0.6rem;
     }
 }
 
@@ -119,5 +270,50 @@ section#about-me::before {
         padding: 1rem;
         margin: 1rem 0;
         line-height: 1.6;
+    }
+
+    .experience-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .resume-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .experience-list {
+        gap: 1.2rem;
+    }
+
+    .experience-item {
+        padding: 1rem;
+    }
+
+    .company-name {
+        font-size: 1rem;
+    }
+
+    .experience-period {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .position-title {
+        font-size: 0.9rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .experience-description {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .experience-technologies {
+        font-size: 0.75rem;
+        padding: 0.5rem;
     }
 }

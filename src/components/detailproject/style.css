@@ -46,6 +46,8 @@
 
 #content-detail-project {
     padding: 2rem;
+    padding-top: 6rem;
+    /* Espaço para o NavBar */
     max-width: 1200px;
     margin: 0 auto;
     min-height: 100vh;
@@ -214,11 +216,14 @@
 
 @media screen and (max-width: 768px) {
     #content-detail-project {
-        padding: 1rem;
+        padding: 1.5rem;
+        padding-top: 5rem;
+        /* Espaço para o NavBar em tablets */
     }
 
     .title-detail-project {
         font-size: 2.5em;
+        margin-top: 1rem;
     }
 
     .subtitle-detail-project {
@@ -226,14 +231,12 @@
     }
 
     .description-project {
-        font-size: 1rem;
         margin: 1.5rem 0;
-        text-align: left;
+        font-size: 1rem;
     }
 
     .description-line {
         margin: 0.4rem 0;
-        line-height: 1.7;
     }
 
     #container-mobile {
@@ -241,7 +244,7 @@
     }
 
     #container-mobile .border-1 {
-        padding: 1rem;
+        margin: 0.5rem 0;
     }
 
     #container-mobile h4 {
@@ -252,6 +255,7 @@
 @media screen and (max-width: 480px) {
     .title-detail-project {
         font-size: 2em;
+        margin-top: 0.5rem;
     }
 
     .subtitle-detail-project {
@@ -261,5 +265,11 @@
     #return-router-container {
         padding: 0.6rem 1rem;
         font-size: 0.9rem;
+    }
+
+    #content-detail-project {
+        padding: 1rem;
+        padding-top: 4.5rem;
+        /* Espaço para o NavBar em mobile */
     }
 }

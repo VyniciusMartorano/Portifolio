@@ -11,12 +11,19 @@ import DetailProject from "./components/detailproject/DetailProject";
 const MainPage = () => {
   return (
     <div>
-      <NavBar />
       <Home />
+      <About />
       <Works />
       <Skills />
-      <About />
       <Footer />
+    </div>
+  );
+};
+
+const DetailProjectPage = () => {
+  return (
+    <div>
+      <DetailProject />
     </div>
   );
 };
@@ -24,10 +31,13 @@ const MainPage = () => {
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/detailproject/:nameproject" element={<DetailProject />} />
-      </Routes>
+      <div>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/detailproject/:nameproject" element={<DetailProjectPage />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }

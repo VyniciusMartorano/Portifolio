@@ -77,35 +77,35 @@ const Works = () => {
     const projects = [
         {
             title: "Spotify Clone",
-            subtitle: "Clone completo do Spotify com autenticação, player de música, playlists personalizadas e interface responsiva. Desenvolvido com React, Django REST API e Redux para gerenciamento de estado.",
+            subtitle: "Complete Spotify clone with authentication, music player, personalized playlists and responsive interface. Built with React, Django REST API and Redux for state management.",
             to: "spotify",
             img: spotify,
             technologies: ["React", "Django", "Redux", "Python"]
         },
         {
             title: "Live Bike",
-            subtitle: "Sistema completo de gestão para aluguel de bicicletas. Inclui cadastro de clientes, controle de contratos, gestão de frota, manutenção preventiva e relatórios gerenciais. Projeto freelance com interface moderna.",
+            subtitle: "Complete bike rental management system. Includes customer registration, contract control, fleet management, preventive maintenance and management reports. Freelance project with modern interface.",
             to: "livebike",
             img: livebike,
             technologies: ["React", "Django", "PostgreSQL", "JavaScript"]
         },
         {
             title: "Mister Massas",
-            subtitle: "Sistema desktop completo para pizzaria com controle de pedidos, cadastro de clientes, relatórios de vendas e integração com impressora térmica. Desenvolvido em Python com interface gráfica intuitiva.",
+            subtitle: "Complete desktop system for pizzeria with order control, customer registration, sales reports and thermal printer integration. Developed in Python with intuitive graphical interface.",
             to: "pizzeria",
             img: mistermassas,
             technologies: ["Python"]
         },
         {
             title: "E-Commerce",
-            subtitle: "Plataforma de e-commerce completa com catálogo de produtos, carrinho de compras, sistema de pagamento, gestão de usuários e painel administrativo. Interface responsiva e otimizada para SEO.",
+            subtitle: "Complete e-commerce platform with product catalog, shopping cart, payment system, user management and admin panel. Responsive interface optimized for SEO.",
             to: "ecommerce",
             img: ecommerce,
             technologies: ["Django", "Python", "Bootstrap", "PostgreSQL"]
         },
         {
             title: "Woguess",
-            subtitle: "Jogo de adivinhação de palavras inspirado no Wordle. Interface interativa com feedback visual, sistema de pontuação, múltiplos níveis de dificuldade e design responsivo para desktop e mobile.",
+            subtitle: "Word guessing game inspired by Wordle. Interactive interface with visual feedback, scoring system, multiple difficulty levels and responsive design for desktop and mobile.",
             to: "woguess",
             img: woguess,
             technologies: ["HTML", "CSS", "JavaScript"]

@@ -59,7 +59,7 @@ const Education = () => {
     return (
         <div id="education">
             <h4 className="subtitles-about">
-                1.0 <i className="fas fa-solid fa-book"></i> Education
+                2.0 <i className="fas fa-solid fa-book"></i> Education
             </h4>
 
             <div className="education-grid">
@@ -81,10 +81,6 @@ const Education = () => {
                     </div>
                 ))}
             </div>
-
-            <h4 style={{ marginTop: '30px' }} className="subtitles-about">
-                1.1 <i className="fas fa-solid fa-user"></i> Resume
-            </h4>
         </div>
     )
 }

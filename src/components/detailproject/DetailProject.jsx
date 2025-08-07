@@ -36,7 +36,7 @@ const DetailProject = () => {
 
   return (
     <div id="content-detail-project">
-      <div id="header-detail-projects">
+      <div id="header-detail-projects" className="mt-3">
         <div id="return-router-container" onClick={() => setRedirect(true)}>
           <i id="icon-return" className="fas fa-solid fa-arrow-left"></i>
           <span>Voltar</span>
