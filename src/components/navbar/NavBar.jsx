@@ -43,7 +43,7 @@ const NavBar = () => {
       }, 100); // Pequeno delay para garantir que o DOM esteja pronto
     }
   };
-
+  //teste
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`} id="home">
       <div className="navbar-container">
