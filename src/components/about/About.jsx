@@ -8,8 +8,8 @@ const Experience = () => {
             company: "EloGroup",
             position: "Full Stack Developer",
             period: "02/2025 - (current)",
-            description: "Digital transformation of public services through business process modeling and automation using the SydleOne platform (BPMS). Development of custom integrations and automations with JavaScript and ElasticSearch to meet specific demands of public clients. Responsible for creating process flows, automating manual tasks and optimizing public service management. Use of Azure DevOps for version control, backlog management and delivery organization following agile practices (SCRUM).",
-            technologies: "JavaScript, ElasticSearch, SydleOne, Azure DevOps"
+            description: "Digital transformation of public services through business process modeling and automation using the SydleOne platform (BPMS). Development of custom integrations and automations with JavaScript and ElasticSearch to meet specific demands of public clients. Implementation of document analysis solutions using artificial intelligence and machine learning for automated processing and data extraction. Responsible for creating process flows, automating manual tasks and optimizing public service management. Use of Azure DevOps for version control, backlog management and delivery organization following agile practices (SCRUM).",
+            technologies: "JavaScript, ElasticSearch, SydleOne, Azure DevOps, Stencil JS, Web Components, Machine Learning"
         },
         {
             company: "Simas Industrial",
@@ -53,9 +53,8 @@ const About = () => {
                     <h4 className="section-subtitle">
                         1.0 <i className="fas fa-solid fa-user"></i> Resume
                     </h4>
-                    <p className="text-about">Hello! Welcome to my portfolio, a space where I share some of the projects I've had the opportunity to develop throughout my career as a developer. Here, you will find a sample of my work and be able to explore different solutions I've created to tackle challenges in the digital world.</p>
-                    <p className="text-about">My journey in this fascinating field of programming began in 2020 when I voluntarily developed a desktop application for a local pizzeria. The goal was to optimize the establishment's internal processes, making them more efficient and agile. This experience was a transformative milestone as I was able to firsthand experience the positive impact that technology can bring to businesses.</p>
-                    <p className="text-about">From that moment on, I decided to dedicate my professional life to software development, aiming to create solutions that streamline people's daily lives and contribute to the simplification of complex tasks. My motivation is to reduce efforts and provide tools that drive the growth and success of individuals.</p>
+                    <p className="text-about">Hello! Welcome to my portfolio, a space where I share some of the projects I've had the opportunity to develop throughout my career as a developer. Here, you will find a sample of my work and be able to explore different solutions I've created to tackle challenges in the digital world. My journey in this fascinating field of programming began in 2020 when I voluntarily developed a desktop application for a local pizzeria, aiming to optimize the establishment's internal processes and make them more efficient and agile.</p>
+                    <p className="text-about">From that transformative experience, I decided to dedicate my professional life to software development, focusing on creating solutions that streamline people's daily lives and contribute to the simplification of complex tasks. My motivation is to reduce efforts and provide tools that drive the growth and success of individuals, always seeking to deliver positive impact through technology.</p>
                 </div>
                 <Education />
                 <Experience />

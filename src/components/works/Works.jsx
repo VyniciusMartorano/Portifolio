@@ -66,7 +66,7 @@ const ProjectCard = ({ img, title, subtitle, to, technologies }) => {
                 )}
             </div>
             <div className="project-card__overlay">
-                <span className="project-card__view">Ver Projeto</span>
+                <span className="project-card__view">View Project</span>
             </div>
             {redirect && <Navigate to={"/detailproject/" + to.toLowerCase()} />}
         </div>

@@ -48,7 +48,7 @@ const NavBar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`} id="home">
       <div className="navbar-container">
         <a href="/" className="navbar-brand not-select" onClick={closeMenu}>
-          &lt; Vynicius /&gt;
+          &lt; Vynicius Martorano /&gt;
         </a>
 
         <div className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
